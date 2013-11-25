@@ -69,32 +69,6 @@ Enables or disables the built-in attribution control.
         });
     </script>
 
-### controls.attribution.position `String` *(default: "bottomRight")*
-
-The position of the attribution control. Possible values include:
-
-* "topLeft"
-* "topRight"
-* "bottomRight"
-* "bottomLeft"
-
-#### Example - position the attribution control
-    <div id="map"></div>
-    <script>
-        $("#map").kendoMap({
-            controls: {
-                attribution: {
-                    position: "topRight"
-                }
-            },
-            layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }]
-        });
-    </script>
-
 ### controls.navigator `Boolean|Object` *(default: true)*
 
 Enables or disables the built-in navigator control (directional pad).
@@ -105,77 +79,6 @@ Enables or disables the built-in navigator control (directional pad).
         $("#map").kendoMap({
             controls: {
                 navigator: false
-            },
-            layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }]
-        });
-    </script>
-
-### controls.navigator.position `String` *(default: "topLeft")*
-
-The position of the navigator control. Possible values include:
-
-* "topLeft"
-* "topRight"
-* "bottomRight"
-* "bottomLeft"
-
-#### Example - position the navigator control
-    <div id="map"></div>
-    <script>
-        $("#map").kendoMap({
-            controls: {
-                navigator: {
-                    position: "topRight"
-                }
-            },
-            layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }]
-        });
-    </script>
-
-### controls.zoom `Boolean|Object` *(default: true)*
-
-Enables or disables the built-in zoom control (+/- button).
-
-#### Example - hide the zoom control
-    <div id="map"></div>
-    <script>
-        $("#map").kendoMap({
-            controls: {
-                zoom: false
-            },
-            layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }]
-        });
-    </script>
-
-### controls.zoom.position `String` *(default: "topLeft")*
-
-The position of the zoom control. Possible values include:
-
-* "topLeft"
-* "topRight"
-* "bottomRight"
-* "bottomLeft"
-
-#### Example - position the zoom control
-    <div id="map"></div>
-    <script>
-        $("#map").kendoMap({
-            controls: {
-                zoom: {
-                    position: "topRight"
-                }
             },
             layers: [{
                 type: "tile",
@@ -214,11 +117,6 @@ The default configuration for shape layers.
     <div id="map"></div>
     <script>
         $("#map").kendoMap({
-            controls: {
-                navigator: {
-                    position: "topRight"
-                }
-            },
             layerDefaults: {
                 shape: {
                     attribution: "&copy; Company Inc."
@@ -2501,41 +2399,6 @@ Prepares the widget for safe removal from DOM. Detaches all event handlers and r
         map.destroy();
 
         $("#map").remove();
-    </script>
-
-### eventOffset
-
-Returns the event coordinates relative to the map element.
-Offset coordinates are not synchronized to a particular location on the map.
-
-#### Example - position elements over widget on click
-    <style>
-        .box {
-            position: absolute;
-            display: block;
-            width: 10px;
-            height: 10px;
-            margin: -5px 0 0 -5px;
-            background: red;
-        }
-    </style>
-    <div id="map"></div>
-    <script>
-        $("#map").kendoMap({
-            layers: [{
-                type: "tile",
-                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
-                attribution: "&copy; OpenStreetMap"
-            }]
-        });
-
-        var map = $("#map").data("kendoMap");
-        $("#map").click(function(e) {
-            var offset = map.eventOffset(e);
-            $("<span class='box'></span>")
-            .css({ top: offset.y, left: offset.x })
-            .appendTo(map.element);
-        });
     </script>
 
 ### eventToLayer
