@@ -139,7 +139,7 @@ If you have deferred the initialization of the widget, make sure you get its ins
 ## Client Templates
 
 By default every Kendo UI wrapper renders a script elements with an initialization statement. If the wrapper declaration is placed inside a Kendo UI template, this would lead to nested script elements which is invalid.
-The `ToClientTemplate` method instructs the widget wrapper to escape its own script element, so that it can be nested.
+The `ToClientTemplate` method instructs the widget wrapper to escape its own script element, so that it can be nested. 
 
     <script id="template" type="text/x-kendo-template">
         @(Html.Kendo().NumericTextBox()
