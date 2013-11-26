@@ -2362,6 +2362,16 @@ The map size is derived from the zoom level and minScale options: `size = (2 ^ z
 Gets or sets the map center.
 The setter is chainable, i.e. returns the map instance.
 
+#### Parameters
+
+##### center `Array|kendo.dataviz.map.Location`
+
+The location of the new map center.
+
+#### Returns
+
+`kendo.dataviz.map.Location` The current map center.
+
 #### Example - set the map zoom level
     <div id="map"></div>
     <script>
@@ -2401,10 +2411,65 @@ Prepares the widget for safe removal from DOM. Detaches all event handlers and r
         $("#map").remove();
     </script>
 
+### eventOffset
+
+Returns the event coordinates relative to the map element.
+Offset coordinates are not synchronized to a particular location on the map.
+
+#### Parameters
+
+##### e `Object|jQuery.Event`
+
+The DOM or jQuery mouse event.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` The event coordinates relative to the map element.
+
+#### Example - position elements over widget on click
+    <style>
+        .box {
+            position: absolute;
+            display: block;
+            width: 10px;
+            height: 10px;
+            margin: -5px 0 0 -5px;
+            background: red;
+        }
+    </style>
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+
+        var map = $("#map").data("kendoMap");
+        $("#map").click(function(e) {
+            var offset = map.eventOffset(e);
+            $("<span class='box'></span>")
+            .css({ top: offset.y, left: offset.x })
+            .appendTo(map.element);
+        });
+    </script>
+
 ### eventToLayer
 
 Retrieves projected (layer) coordinates that correspond to this mouse event.
 Layer coordinates are absolute and change only when the zoom level is changed.
+
+#### Parameters
+
+##### e `Object|jQuery.Event`
+
+The DOM or jQuery mouse event.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` The projected (layer) coordinates that correspond to this mouse event.
 
 #### Example - retrieve projected coordinates
     <div id="map"></div>
@@ -2427,6 +2492,16 @@ Layer coordinates are absolute and change only when the zoom level is changed.
 ### eventToLocation
 
 Retrieves the geographic location that correspond to this mouse event.
+
+#### Parameters
+
+##### e `Object|jQuery.Event`
+
+The DOM or jQuery mouse event.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` The geographic location that correspond to this mouse event.
 
 #### Example - place marker on clicked location
     <div id="map"></div>
@@ -2457,6 +2532,16 @@ Retrieves relative (view) coordinates that correspond to this mouse event.
 Layer elements positioned on these coordinates will appear under the mouse cursor.
 
 View coordinates are no longer valid after a map [reset](#events-reset).
+
+#### Parameters
+
+##### e `Object|jQuery.Event`
+
+The DOM or jQuery mouse event.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` The relative (view) coordinates that correspond to this mouse event.
 
 #### Example - position elements over map on click
     <style>
@@ -2490,7 +2575,13 @@ View coordinates are no longer valid after a map [reset](#events-reset).
 
 ### extent
 
-Gets the map [extent](/api/dataviz/map/extent).
+Gets the map current [map extent](/api/dataviz/map/extent).
+
+#### Parameters
+
+#### Returns
+
+`kendo.dataviz.map.Extent` The current map extent.
 
 #### Example - get the map extent
     <div id="map"></div>
@@ -2512,6 +2603,20 @@ Gets the map [extent](/api/dataviz/map/extent).
 ### layerToLocation
 
 Transforms layer (projected) coordinates to geographical location.
+
+#### Parameters
+
+##### point `kendo.dataviz.geometry.Point`
+
+The layer (projected) coordinates.
+
+##### zoom `Number`
+
+Optional. Assumed zoom level. Defaults to the current zoom level.
+
+#### Returns
+
+`kendo.dataviz.map.Location` The geographic location that corresponds to the layer coordinates.
 
 #### Example - retrieve location of NW corner
     <div id="map" style="width: 1024px; height: 1024px;"></div>
@@ -2536,6 +2641,20 @@ Transforms layer (projected) coordinates to geographical location.
 
 Returns the layer (projected) coordinates that correspond to a geographical location.
 
+#### Parameters
+
+##### location `kendo.dataviz.map.Location`
+
+The geographic location.
+
+##### zoom `Number`
+
+Optional. Assumed zoom level. Defaults to the current zoom level.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` The layer (projected) coordinates.
+
 #### Example - retrieve the projected coordinates of a location
     <div id="map" style="width: 1024px; height: 1024px;"></div>
     <script>
@@ -2558,6 +2677,16 @@ Returns the layer (projected) coordinates that correspond to a geographical loca
 ### locationToView
 
 Returns the view (relative) coordinates that correspond to a geographical location.
+
+#### Parameters
+
+##### location `kendo.dataviz.map.Location`
+
+The geographic location.
+
+#### Returns
+
+`kendo.dataviz.geometry.Point` The view coordinates that correspond to a geographical location.
 
 #### Retrieves the view coordinates of the map center
     <div id="map" style="width: 1024px; height: 1024px;"></div>
@@ -2583,6 +2712,12 @@ Returns the view (relative) coordinates that correspond to a geographical locati
 
 Resets the map and applies new options over the current state.
 
+#### Parameters
+
+##### options `Object`
+
+The new options to be applied.
+
 #### Example - set map zoom & center simultaneously
     <div id="map"></div>
     <script>
@@ -2605,6 +2740,10 @@ Resets the map and applies new options over the current state.
 
 Retrieves the size of the visible portion of the map.
 
+#### Returns
+
+`Object` The size (width and height) of the visible portion of the map.
+
 #### Example - retrieve view size
     <script>
         $("#map").kendoMap({
@@ -2624,7 +2763,21 @@ Retrieves the size of the visible portion of the map.
 
 ### viewToLocation
 
-Returns the view (relative) coordinates that correspond to a geographical location.
+Returns the geographical location that correspond to the view (relative) coordinates.
+
+#### Parameters
+
+##### point `kendo.dataviz.geometry.Point`
+
+The view coordinates.
+
+##### zoom `Number`
+
+Optional. Assumed zoom level. Defaults to the current zoom level.
+
+#### Returns
+
+`kendo.dataviz.map.Location` The geographic location that corresponds to the view coordinates.
 
 #### Example - retrieve location corresponding to view center
     <div id="map" style="width: 1024px; height: 1024px;"></div>
@@ -2651,7 +2804,16 @@ Returns the view (relative) coordinates that correspond to a geographical locati
 Gets or sets the map zoom level.
 The setter is chainable, i.e. returns the map instance.
 
-> The map [zoom](#configuration-zoom) is clamped to the [minZoom, maxZoom] interval.
+#### Parameters
+
+##### level `Number`
+
+The new zoom level. The value is clamped to the
+ [[minZoom](#configuration-minZoom), [maxZoom](#configuration-maxZoom)] interval.
+
+#### Returns
+
+`Number` The current zoom level.
 
 #### Example - zoom in
     <div id="map"></div>
@@ -2676,9 +2838,19 @@ The setter is chainable, i.e. returns the map instance.
 
 Fired when the user clicks on the map.
 
-Event fields include:
-* location - `kendo.dataviz.map.Location` instance that corresponds to the click point
-* originalEvent - the jQuery event instance
+#### Event Data
+
+##### e.location `kendo.dataviz.map.Location`
+
+The location of the clicked point.
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
+##### e.originalEvent `jQuery.Event`
+
+The source jQuery event instance
 
 #### Example - place marker on clicked location
     <div id="map"></div>
@@ -2726,6 +2898,12 @@ Event fields include:
 Fired when the map is reset.
 This typically occurs on initial load and after a zoom/center change.
 
+#### Event Data
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
 #### Example - bind to the map reset event on initialization
     <div id="map"></div>
     <script>
@@ -2766,10 +2944,23 @@ This typically occurs on initial load and after a zoom/center change.
 
 Fired while the map viewport is being moved.
 
-Event fields include:
-* origin - `kendo.dataviz.map.Location` of the map origin (top left or NW corner)
-* originalEvent - the jQuery event instance
-* center - `kendo.dataviz.map.Location` of the current map center
+#### Event Data
+
+##### e.origin `kendo.dataviz.map.Location`
+
+The map origin (top left or NW corner).
+
+##### e.center `kendo.dataviz.map.Location`
+
+The current map center.
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
+##### e.originalEvent `jQuery.Event`
+
+The source jQuery event instance
 
 #### Example - bind to the map pan event on initialization
     <div id="map"></div>
@@ -2811,10 +3002,23 @@ Event fields include:
 
 Fires after the map viewport has been moved.
 
-Event fields include:
-* origin - `kendo.dataviz.map.Location` of the map origin (top left or NW corner)
-* originalEvent - the jQuery event instance
-* center - `kendo.dataviz.map.Location` of the map center
+#### Event Data
+
+##### e.origin `kendo.dataviz.map.Location`
+
+The map origin (top left or NW corner).
+
+##### e.center `kendo.dataviz.map.Location`
+
+The map center.
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
+##### e.originalEvent `jQuery.Event`
+
+The source jQuery event instance
 
 #### Example - bind to the map panEnd event on initialization
     <div id="map"></div>
@@ -2856,10 +3060,23 @@ Event fields include:
 
 Fired when a shape is clicked or tapped.
 
-Event fields include:
-* layer - the parent layer instance (`kendo.dataviz.map.layer.Shape`)
-* shape - the shape instance (`kendo.dataviz.drawing.Shape`)
-* originalEvent - the jQuery event instance
+#### Event Data
+
+##### e.layer `kendo.dataviz.map.layer.Shape`
+
+The parent layer instance.
+
+##### e.shape `kendo.dataviz.drawing.Shape`
+
+The the shape instance.
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
+##### e.originalEvent `jQuery.Event`
+
+The source jQuery event instance
 
 #### Example - bind to the map shapeClick event on initialization
     <div id="map"></div>
@@ -2901,10 +3118,23 @@ Event fields include:
 
 Fired when a shape is created, but is not rendered yet.
 
-Event fields include:
-* layer - the parent layer instance (`kendo.dataviz.map.layer.Shape`)
-* shape - the shape instance (`kendo.dataviz.drawing.Shape`)
-* originalEvent - the jQuery event instance
+#### Event Data
+
+##### e.layer `kendo.dataviz.map.layer.Shape`
+
+The parent layer instance.
+
+##### e.shape `kendo.dataviz.drawing.Shape`
+
+The the shape instance.
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
+##### e.originalEvent `jQuery.Event`
+
+The source jQuery event instance
 
 #### Example - bind to the map shapeCreated event on initialization
     <div id="map"></div>
@@ -2946,10 +3176,23 @@ Event fields include:
 
 Fired when the mouse enters a shape.
 
-Event fields include:
-* layer - the parent layer instance (`kendo.dataviz.map.layer.Shape`)
-* shape - the shape instance (`kendo.dataviz.drawing.Shape`)
-* originalEvent - the jQuery event instance
+#### Event Data
+
+##### e.layer `kendo.dataviz.map.layer.Shape`
+
+The parent layer instance.
+
+##### e.shape `kendo.dataviz.drawing.Shape`
+
+The the shape instance.
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
+##### e.originalEvent `jQuery.Event`
+
+The source jQuery event instance
 
 #### Example - bind to the map shapeMouseEnter event on initialization
     <div id="map"></div>
@@ -2991,10 +3234,23 @@ Event fields include:
 
 Fired when the mouse leaves a shape.
 
-Event fields include:
-* layer - the parent layer instance (`kendo.dataviz.map.layer.Shape`)
-* shape - the shape instance (`kendo.dataviz.drawing.Shape`)
-* originalEvent - the jQuery event instance
+#### Event Data
+
+##### e.layer `kendo.dataviz.map.layer.Shape`
+
+The parent layer instance.
+
+##### e.shape `kendo.dataviz.drawing.Shape`
+
+The the shape instance.
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
+##### e.originalEvent `jQuery.Event`
+
+The source jQuery event instance
 
 #### Example - bind to the map shapeMouseLeave event on initialization
     <div id="map"></div>
@@ -3036,8 +3292,15 @@ Event fields include:
 
 Fired when the map zoom level is about to change.
 
-Event fields include:
-* originalEvent - the jQuery event instance
+#### Event Data
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
+##### e.originalEvent `jQuery.Event`
+
+The source jQuery event instance
 
 #### Example - bind to the map zoomStart event on initialization
     <div id="map"></div>
@@ -3079,8 +3342,15 @@ Event fields include:
 
 Fired when the map zoom level has changed.
 
-Event fields include:
-* originalEvent - the jQuery event instance
+#### Event Data
+
+##### e.sender `kendo.dataviz.ui.Map`
+
+The source widget instance.
+
+##### e.originalEvent `jQuery.Event`
+
+The source jQuery event instance
 
 #### Example - bind to the map zoomEnd event on initialization
     <div id="map"></div>
