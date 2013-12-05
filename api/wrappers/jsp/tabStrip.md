@@ -79,7 +79,7 @@ tab.
 A collection of visual animations used when TabStrip tab are selected through
 user interactions. Setting this option to false will disable all animations.
 
-More documentation is available at [kendo:tabStrip-animation](tabstrip/animation).
+More documentation is available at [kendo:tabStrip-animation](/api/wrappers/jsp/tabstrip/animation).
 
 #### Example
 
@@ -91,7 +91,7 @@ More documentation is available at [kendo:tabStrip-animation](tabstrip/animation
 
 Contains the items of the tabstrip widget
 
-More documentation is available at [kendo:tabStrip-items](tabstrip/items).
+More documentation is available at [kendo:tabStrip-items](/api/wrappers/jsp/tabstrip/items).
 
 #### Example
 

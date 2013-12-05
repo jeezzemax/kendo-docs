@@ -82,7 +82,7 @@ The id of the template used for rendering the items in the listview.
 
 Indicates whether paging is enabled/disabled.
 
-More documentation is available at [kendo:listView-pageable](listview/pageable).
+More documentation is available at [kendo:listView-pageable](/api/wrappers/jsp/listview/pageable).
 
 #### Example
 

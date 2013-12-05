@@ -165,7 +165,7 @@ If set to true the user could sort the grid by clicking the column header cells.
 If set to true the grid will display the column menu when the user clicks the chevron icon in the column headers. The column menu allows the user to show and hide columns, filter and sort (if filtering and sorting are enabled).
 By default the column menu is not enabled.Can be set to a JavaScript object which represents the column menu configuration.
 
-More documentation is available at [kendo:grid-columnMenu](grid/columnmenu).
+More documentation is available at [kendo:grid-columnMenu](/api/wrappers/jsp/grid/columnmenu).
 
 #### Example
 
@@ -178,7 +178,7 @@ More documentation is available at [kendo:grid-columnMenu](grid/columnmenu).
 The configuration of the grid columns. An array of JavaScript objects or strings. A JavaScript objects are interpreted as column configurations. Strings are interpreted as the
 field to which the column is bound. The grid will create a column for every item of the array.
 
-More documentation is available at [kendo:grid-columns](grid/columns).
+More documentation is available at [kendo:grid-columns](/api/wrappers/jsp/grid/columns).
 
 #### Example
 
@@ -190,7 +190,7 @@ More documentation is available at [kendo:grid-columns](grid/columns).
 
 If set to true the user would be able to edit the data to which the grid is bound to. By default editing is disabled.Can be set to a string ("inline", "incell" or "popup") to specify the editing mode. The default editing mode is "incell".Can be set to a JavaScript object which represents the editing configuration.
 
-More documentation is available at [kendo:grid-editable](grid/editable).
+More documentation is available at [kendo:grid-editable](/api/wrappers/jsp/grid/editable).
 
 #### Example
 
@@ -202,7 +202,7 @@ More documentation is available at [kendo:grid-editable](grid/editable).
 
 If set to true the user can filter the data source using the grid filter menu. Filtering is disabled by default.Can be set to a JavaScript object which represents the filter menu configuration.
 
-More documentation is available at [kendo:grid-filterable](grid/filterable).
+More documentation is available at [kendo:grid-filterable](/api/wrappers/jsp/grid/filterable).
 
 #### Example
 
@@ -214,7 +214,7 @@ More documentation is available at [kendo:grid-filterable](grid/filterable).
 
 If set to true the user could group the grid by dragging the column header cells. By default grouping is disabled.Can be set to a JavaScript object which represents the grouping configuration.
 
-More documentation is available at [kendo:grid-groupable](grid/groupable).
+More documentation is available at [kendo:grid-groupable](/api/wrappers/jsp/grid/groupable).
 
 #### Example
 
@@ -226,7 +226,7 @@ More documentation is available at [kendo:grid-groupable](grid/groupable).
 
 If set to true the grid will display a pager. By default paging is disabled.Can be set to a JavaScript object which represents the pager configuration.
 
-More documentation is available at [kendo:grid-pageable](grid/pageable).
+More documentation is available at [kendo:grid-pageable](/api/wrappers/jsp/grid/pageable).
 
 #### Example
 
@@ -238,7 +238,7 @@ More documentation is available at [kendo:grid-pageable](grid/pageable).
 
 If set to true the grid will display a scrollbar when the total row height (or width) exceeds the grid height (or width). By default scrolling is enabled.Can be set to a JavaScript object which represents the scrolling configuration.
 
-More documentation is available at [kendo:grid-scrollable](grid/scrollable).
+More documentation is available at [kendo:grid-scrollable](/api/wrappers/jsp/grid/scrollable).
 
 #### Example
 
@@ -250,7 +250,7 @@ More documentation is available at [kendo:grid-scrollable](grid/scrollable).
 
 If set to true the user could sort the grid by clicking the column header cells. By default sorting is disabled.Can be set to a JavaScript object which represents the sorting configuration.
 
-More documentation is available at [kendo:grid-sortable](grid/sortable).
+More documentation is available at [kendo:grid-sortable](/api/wrappers/jsp/grid/sortable).
 
 #### Example
 
@@ -262,7 +262,7 @@ More documentation is available at [kendo:grid-sortable](grid/sortable).
 
 The list of commands displayed in the grid toolbar. Commands can be custom or built-in ("cancel", "create", "save").The "cancel" built-in command reverts any data changes done by the end user.The "create" command adds an empty data item to the grid.The "save" command persists any data changes done by the end user.
 
-More documentation is available at [kendo:grid-toolbar](grid/toolbar).
+More documentation is available at [kendo:grid-toolbar](/api/wrappers/jsp/grid/toolbar).
 
 #### Example
 

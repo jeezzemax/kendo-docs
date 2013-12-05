@@ -96,7 +96,7 @@ Note that when initializing the widget from an <input> element, the initial colo
 
 The size of a color cell.
 
-More documentation is available at [kendo:colorPicker-tileSize](colorpicker/tilesize).
+More documentation is available at [kendo:colorPicker-tileSize](/api/wrappers/jsp/colorpicker/tilesize).
 
 #### Example
 

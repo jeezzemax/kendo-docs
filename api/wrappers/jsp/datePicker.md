@@ -108,7 +108,7 @@ Specifies the selected date.
 
 Configures the opening and closing animations of the calendar popup. Setting the animation option to false will disable the opening and closing animations. As a result the calendar popup will open and close instantly.
 
-More documentation is available at [kendo:datePicker-animation](datepicker/animation).
+More documentation is available at [kendo:datePicker-animation](/api/wrappers/jsp/datepicker/animation).
 
 #### Example
 
@@ -120,7 +120,7 @@ More documentation is available at [kendo:datePicker-animation](datepicker/anima
 
 Templates for the cells rendered in the calendar "month" view.
 
-More documentation is available at [kendo:datePicker-month](datepicker/month).
+More documentation is available at [kendo:datePicker-month](/api/wrappers/jsp/datepicker/month).
 
 #### Example
 

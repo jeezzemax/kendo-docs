@@ -91,7 +91,7 @@ Specifies the selected date.
 
 Templates for the cells rendered in "month" view.
 
-More documentation is available at [kendo:calendar-month](calendar/month).
+More documentation is available at [kendo:calendar-month](/api/wrappers/jsp/calendar/month).
 
 #### Example
 

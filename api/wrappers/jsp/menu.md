@@ -70,7 +70,7 @@ its parent horizontally. You can also switch off the screen boundary detection c
 A collection of Animation objects, used to change default animations. A value of false will disable all animations in the widget.Available animations for the Menu are listed below.  Each animation has a reverse options which is used for the close effect by default, but can be over-ridden
 by setting the close animation.  Each animation also has a direction which can be set off the animation (i.e. slideIn:Down).
 
-More documentation is available at [kendo:menu-animation](menu/animation).
+More documentation is available at [kendo:menu-animation](/api/wrappers/jsp/menu/animation).
 
 #### Example
 
@@ -82,7 +82,7 @@ More documentation is available at [kendo:menu-animation](menu/animation).
 
 Contains the items of the menu widget
 
-More documentation is available at [kendo:menu-items](menu/items).
+More documentation is available at [kendo:menu-items](/api/wrappers/jsp/menu/items).
 
 #### Example
 

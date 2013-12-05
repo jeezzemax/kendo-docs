@@ -64,7 +64,7 @@ Configures the ability to upload a file(s) in an asynchronous manner. Please ref
 async mode help topic
 for more details.
 
-More documentation is available at [kendo:upload-async](upload/async).
+More documentation is available at [kendo:upload-async](/api/wrappers/jsp/upload/async).
 
 #### Example
 
@@ -76,7 +76,7 @@ More documentation is available at [kendo:upload-async](upload/async).
 
 Sets the strings rendered by the Upload.
 
-More documentation is available at [kendo:upload-localization](upload/localization).
+More documentation is available at [kendo:upload-localization](/api/wrappers/jsp/upload/localization).
 
 #### Example
 

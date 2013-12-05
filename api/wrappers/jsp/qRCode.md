@@ -74,7 +74,7 @@ The value of the QRCode.
 
 The border of the QR code.
 
-More documentation is available at [kendo:qRCode-border](qrcode/border).
+More documentation is available at [kendo:qRCode-border](/api/wrappers/jsp/qrcode/border).
 
 #### Example
 

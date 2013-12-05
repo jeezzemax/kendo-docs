@@ -156,7 +156,7 @@ The valueTemplate used to render the selected value. By default the widget displ
 
 Configures the opening and closing animations of the suggestion popup. Setting the animation option to false will disable the opening and closing animations. As a result the suggestion popup will open and close instantly.
 
-More documentation is available at [kendo:dropDownList-animation](dropdownlist/animation).
+More documentation is available at [kendo:dropDownList-animation](/api/wrappers/jsp/dropdownlist/animation).
 
 #### Example
 

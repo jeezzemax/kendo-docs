@@ -123,7 +123,7 @@ Specifies the selected value.
 
 Configures the opening and closing animations of the popups. Setting the animation option to false will disable the opening and closing animations. As a result the popup will open and close instantly.
 
-More documentation is available at [kendo:dateTimePicker-animation](datetimepicker/animation).
+More documentation is available at [kendo:dateTimePicker-animation](/api/wrappers/jsp/datetimepicker/animation).
 
 #### Example
 
@@ -135,7 +135,7 @@ More documentation is available at [kendo:dateTimePicker-animation](datetimepick
 
 Templates for the cells rendered in the calendar "month" view.
 
-More documentation is available at [kendo:dateTimePicker-month](datetimepicker/month).
+More documentation is available at [kendo:dateTimePicker-month](/api/wrappers/jsp/datetimepicker/month).
 
 #### Example
 

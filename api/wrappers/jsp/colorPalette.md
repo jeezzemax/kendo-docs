@@ -50,7 +50,7 @@ Specifies the initially selected color.
 
 The size of a color cell.
 
-More documentation is available at [kendo:colorPalette-tileSize](colorpalette/tilesize).
+More documentation is available at [kendo:colorPalette-tileSize](/api/wrappers/jsp/colorpalette/tilesize).
 
 #### Example
 

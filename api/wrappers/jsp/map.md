@@ -67,7 +67,7 @@ The initial zoom level.Typical web maps use zoom levels from 0 (whole world) to 
 
 The configuration of built-in map controls.
 
-More documentation is available at [kendo:map-controls](map/controls).
+More documentation is available at [kendo:map-controls](/api/wrappers/jsp/map/controls).
 
 #### Example
 
@@ -79,7 +79,7 @@ More documentation is available at [kendo:map-controls](map/controls).
 
 The default configuration for map layers by type.
 
-More documentation is available at [kendo:map-layerDefaults](map/layerdefaults).
+More documentation is available at [kendo:map-layerDefaults](/api/wrappers/jsp/map/layerdefaults).
 
 #### Example
 
@@ -92,7 +92,7 @@ More documentation is available at [kendo:map-layerDefaults](map/layerdefaults).
 The configuration of the map layers.
 The layer type is determined by the value of the type field.
 
-More documentation is available at [kendo:map-layers](map/layers).
+More documentation is available at [kendo:map-layers](/api/wrappers/jsp/map/layers).
 
 #### Example
 
@@ -104,7 +104,7 @@ More documentation is available at [kendo:map-layers](map/layers).
 
 The default options for all markers.
 
-More documentation is available at [kendo:map-markerDefaults](map/markerdefaults).
+More documentation is available at [kendo:map-markerDefaults](/api/wrappers/jsp/map/markerdefaults).
 
 #### Example
 
@@ -116,7 +116,7 @@ More documentation is available at [kendo:map-markerDefaults](map/markerdefaults
 
 Static markers to display on the map.
 
-More documentation is available at [kendo:map-markers](map/markers).
+More documentation is available at [kendo:map-markers](/api/wrappers/jsp/map/markers).
 
 #### Example
 

@@ -36,7 +36,7 @@ are available:
 A collection of visual animations used when PanelBar items are expand or collapsed through
 user interactions. Setting this option to false will disable all animations.
 
-More documentation is available at [kendo:panelBar-animation](panelbar/animation).
+More documentation is available at [kendo:panelBar-animation](/api/wrappers/jsp/panelbar/animation).
 
 #### Example
 
@@ -48,7 +48,7 @@ More documentation is available at [kendo:panelBar-animation](panelbar/animation
 
 Contains the items of the panelbar widget
 
-More documentation is available at [kendo:panelBar-items](panelbar/items).
+More documentation is available at [kendo:panelBar-items](/api/wrappers/jsp/panelbar/items).
 
 #### Example
 

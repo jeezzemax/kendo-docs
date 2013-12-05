@@ -236,7 +236,7 @@ The start of working week (index based).
 
 If set to true the user would be able to create new scheduler events and modify or delete existing ones.
 
-More documentation is available at [kendo:scheduler-editable](scheduler/editable).
+More documentation is available at [kendo:scheduler-editable](/api/wrappers/jsp/scheduler/editable).
 
 #### Example
 
@@ -248,7 +248,7 @@ More documentation is available at [kendo:scheduler-editable](scheduler/editable
 
 If set to false the footer of the scheduler would not be displayed.
 
-More documentation is available at [kendo:scheduler-footer](scheduler/footer).
+More documentation is available at [kendo:scheduler-footer](/api/wrappers/jsp/scheduler/footer).
 
 #### Example
 
@@ -260,7 +260,7 @@ More documentation is available at [kendo:scheduler-footer](scheduler/footer).
 
 The configuration of the scheduler resource(s) grouping.
 
-More documentation is available at [kendo:scheduler-group](scheduler/group).
+More documentation is available at [kendo:scheduler-group](/api/wrappers/jsp/scheduler/group).
 
 #### Example
 
@@ -272,7 +272,7 @@ More documentation is available at [kendo:scheduler-group](scheduler/group).
 
 The configuration of the scheduler messages. Use this option to customize or localize the scheduler messages.
 
-More documentation is available at [kendo:scheduler-messages](scheduler/messages).
+More documentation is available at [kendo:scheduler-messages](/api/wrappers/jsp/scheduler/messages).
 
 #### Example
 
@@ -285,7 +285,7 @@ More documentation is available at [kendo:scheduler-messages](scheduler/messages
 The configuration of the scheduler resource(s). A scheduler resource is optional metadata that can be associated
 with a scheduler event.
 
-More documentation is available at [kendo:scheduler-resources](scheduler/resources).
+More documentation is available at [kendo:scheduler-resources](/api/wrappers/jsp/scheduler/resources).
 
 #### Example
 
@@ -298,7 +298,7 @@ More documentation is available at [kendo:scheduler-resources](scheduler/resourc
 The views displayed by the scheduler and their configuration. The array items can be either objects specifying the view configuration or strings representing the view types (assuming default configuration).
 By default the Kendo UI Scheduler widget displays "day" and "week" view.
 
-More documentation is available at [kendo:scheduler-views](scheduler/views).
+More documentation is available at [kendo:scheduler-views](/api/wrappers/jsp/scheduler/views).
 
 #### Example
 

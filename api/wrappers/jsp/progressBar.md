@@ -89,7 +89,7 @@ The underlying value of the ProgressBar.
 
 Configures the progress animation. Currently only the duration of the animation could be set.
 
-More documentation is available at [kendo:progressBar-animation](progressbar/animation).
+More documentation is available at [kendo:progressBar-animation](/api/wrappers/jsp/progressbar/animation).
 
 #### Example
 

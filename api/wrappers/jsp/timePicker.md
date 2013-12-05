@@ -81,7 +81,7 @@ Specifies the selected time.
 
 Configures the opening and closing animations of the popup. Setting the animation option to false will disable the opening and closing animations. As a result the popup will open and close instantly.
 
-More documentation is available at [kendo:timePicker-animation](timepicker/animation).
+More documentation is available at [kendo:timePicker-animation](/api/wrappers/jsp/timepicker/animation).
 
 #### Example
 

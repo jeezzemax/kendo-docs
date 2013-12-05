@@ -84,7 +84,7 @@ The width of the barcode in pixels.  By default the width is 300.
 
 The border of the barcode area.
 
-More documentation is available at [kendo:barcode-border](barcode/border).
+More documentation is available at [kendo:barcode-border](/api/wrappers/jsp/barcode/border).
 
 #### Example
 
@@ -96,7 +96,7 @@ More documentation is available at [kendo:barcode-border](barcode/border).
 
 The padding of the barcode.
 
-More documentation is available at [kendo:barcode-padding](barcode/padding).
+More documentation is available at [kendo:barcode-padding](/api/wrappers/jsp/barcode/padding).
 
 #### Example
 
@@ -108,7 +108,7 @@ More documentation is available at [kendo:barcode-padding](barcode/padding).
 
 Can be set to a JavaScript object which represents the text configuration.
 
-More documentation is available at [kendo:barcode-text](barcode/text).
+More documentation is available at [kendo:barcode-text](/api/wrappers/jsp/barcode/text).
 
 #### Example
 

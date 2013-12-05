@@ -148,7 +148,7 @@ Specifies width of the window.
 A collection of {Animation} objects, used to change default animations. A value of false
 will disable all animations in the widget.
 
-More documentation is available at [kendo:window-animation](window/animation).
+More documentation is available at [kendo:window-animation](/api/wrappers/jsp/window/animation).
 
 #### Example
 
@@ -160,7 +160,7 @@ More documentation is available at [kendo:window-animation](window/animation).
 
 A collection of one or two members, which define the initial Window's top and/or left position on the page.
 
-More documentation is available at [kendo:window-position](window/position).
+More documentation is available at [kendo:window-position](/api/wrappers/jsp/window/position).
 
 #### Example
 

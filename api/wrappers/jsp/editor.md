@@ -57,7 +57,7 @@ The tag that will be rendered. Defaults to "textarea". Triggers the inline edit 
 
 Configuration for image browser dialog.
 
-More documentation is available at [kendo:editor-imageBrowser](editor/imagebrowser).
+More documentation is available at [kendo:editor-imageBrowser](/api/wrappers/jsp/editor/imagebrowser).
 
 #### Example
 
@@ -71,7 +71,7 @@ A collection of tools that are used to interact with the Editor.
 Tools may be switched on by specifying their name.
 Custom tools and tools that require configuration are defined as objects.The available editor commands are:
 
-More documentation is available at [kendo:editor-tools](editor/tools).
+More documentation is available at [kendo:editor-tools](/api/wrappers/jsp/editor/tools).
 
 #### Example
 

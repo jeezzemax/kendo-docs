@@ -25,7 +25,7 @@ Specifies the orientation of the widget. Supported values are "horizontal" and "
 
 Defines the panes of the splitter
 
-More documentation is available at [kendo:splitter-panes](splitter/panes).
+More documentation is available at [kendo:splitter-panes](/api/wrappers/jsp/splitter/panes).
 
 #### Example
 

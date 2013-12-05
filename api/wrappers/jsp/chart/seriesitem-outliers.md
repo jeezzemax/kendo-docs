@@ -75,7 +75,7 @@ If set to true the chart will display the series outliers. By default chart seri
 
 The border of the outliers.
 
-More documentation is available at [kendo:chart-seriesItem-outliers-border](chart/seriesitem-outliers-border).
+More documentation is available at [kendo:chart-seriesItem-outliers-border](/api/wrappers/jsp/chart/seriesitem-outliers-border).
 
 #### Example
 

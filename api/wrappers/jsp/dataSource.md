@@ -106,7 +106,7 @@ If set the data source will use a predefined transport and/or schema. The only s
 
 The aggregate(s) which are calculated when the data source populates with data. The supported aggregates are "average", "count", "max", "min" and "sum".
 
-More documentation is available at [kendo:dataSource-aggregate](datasource/aggregate).
+More documentation is available at [kendo:dataSource-aggregate](/api/wrappers/jsp/datasource/aggregate).
 
 #### Example
 
@@ -118,7 +118,7 @@ More documentation is available at [kendo:dataSource-aggregate](datasource/aggre
 
 The filter(s) which is (are) applied over the data items. By default no filter is applied.
 
-More documentation is available at [kendo:dataSource-filter](datasource/filter).
+More documentation is available at [kendo:dataSource-filter](/api/wrappers/jsp/datasource/filter).
 
 #### Example
 
@@ -130,7 +130,7 @@ More documentation is available at [kendo:dataSource-filter](datasource/filter).
 
 The grouping configuration of the data source. If set the data items will be grouped when the data source is populated. By default grouping is not applied.
 
-More documentation is available at [kendo:dataSource-group](datasource/group).
+More documentation is available at [kendo:dataSource-group](/api/wrappers/jsp/datasource/group).
 
 #### Example
 
@@ -142,7 +142,7 @@ More documentation is available at [kendo:dataSource-group](datasource/group).
 
 The configuration used to parse the remote service response.
 
-More documentation is available at [kendo:dataSource-schema](datasource/schema).
+More documentation is available at [kendo:dataSource-schema](/api/wrappers/jsp/datasource/schema).
 
 #### Example
 
@@ -154,7 +154,7 @@ More documentation is available at [kendo:dataSource-schema](datasource/schema).
 
 The sort order which will be applied over the data items. By default the data items are not sorted.
 
-More documentation is available at [kendo:dataSource-sort](datasource/sort).
+More documentation is available at [kendo:dataSource-sort](/api/wrappers/jsp/datasource/sort).
 
 #### Example
 
@@ -167,7 +167,7 @@ More documentation is available at [kendo:dataSource-sort](datasource/sort).
 The configuration used to load and save the data items. A data source is remote or local based on the way of it retrieves data items.Remote data sources load and save data items from and to a remote end-point (a.k.a. remote service or server). The transport option describes the remote service configuration - URL, HTTP verb, HTTP headers etc.
 The transport option can also be used to implement custom data loading and saving.Local data sources are bound to a JavaScript array via the data option.
 
-More documentation is available at [kendo:dataSource-transport](datasource/transport).
+More documentation is available at [kendo:dataSource-transport](/api/wrappers/jsp/datasource/transport).
 
 #### Example
 

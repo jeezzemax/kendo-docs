@@ -154,7 +154,7 @@ Define the value of the widget
 
 Configures the opening and closing animations of the suggestion popup. Setting the animation option to false will disable the opening and closing animations. As a result the suggestion popup will open and close instantly.
 
-More documentation is available at [kendo:multiSelect-animation](multiselect/animation).
+More documentation is available at [kendo:multiSelect-animation](/api/wrappers/jsp/multiselect/animation).
 
 #### Example
 

@@ -104,7 +104,7 @@ Template for rendering each node.
 A collection of visual animations used when items are expanded or collapsed through user interaction.
 Setting this option to false will disable all animations.
 
-More documentation is available at [kendo:treeView-animation](treeview/animation).
+More documentation is available at [kendo:treeView-animation](/api/wrappers/jsp/treeview/animation).
 
 #### Example
 
@@ -116,7 +116,7 @@ More documentation is available at [kendo:treeView-animation](treeview/animation
 
 If true or an object, renders checkboxes beside each node.
 
-More documentation is available at [kendo:treeView-checkboxes](treeview/checkboxes).
+More documentation is available at [kendo:treeView-checkboxes](/api/wrappers/jsp/treeview/checkboxes).
 
 #### Example
 
@@ -128,7 +128,7 @@ More documentation is available at [kendo:treeView-checkboxes](treeview/checkbox
 
 Contains the items of the treeview widget
 
-More documentation is available at [kendo:treeView-items](treeview/items).
+More documentation is available at [kendo:treeView-items](/api/wrappers/jsp/treeview/items).
 
 #### Example
 

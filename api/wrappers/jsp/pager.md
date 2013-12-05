@@ -97,7 +97,7 @@ The template for selected page number link.
 
 Defines texts shown within the pager. Use this option to customize or localize the pager messages.
 
-More documentation is available at [kendo:pager-messages](pager/messages).
+More documentation is available at [kendo:pager-messages](/api/wrappers/jsp/pager/messages).
 
 #### Example
 

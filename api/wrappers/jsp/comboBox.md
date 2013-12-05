@@ -180,7 +180,7 @@ Specifies the value binding behavior for the widget when the initial model value
 
 Configures the opening and closing animations of the suggestion popup. Setting the animation option to false will disable the opening and closing animations. As a result the suggestion popup will open and close instantly.
 
-More documentation is available at [kendo:comboBox-animation](combobox/animation).
+More documentation is available at [kendo:comboBox-animation](/api/wrappers/jsp/combobox/animation).
 
 #### Example
 
