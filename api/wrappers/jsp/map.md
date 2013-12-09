@@ -44,6 +44,14 @@ Typical web maps use zoom levels from 0 (whole world) to 19 (sub-meter features)
     <kendo:map minZoom="minZoom">
     </kendo:map>
 
+### pannable `boolean`
+
+Controls whether the user can pan the map.
+
+#### Example
+    <kendo:map pannable="pannable">
+    </kendo:map>
+
 ### wraparound `boolean`
 
 Specifies whether the map should wrap around the east-west edges.
@@ -58,6 +66,14 @@ The initial zoom level.Typical web maps use zoom levels from 0 (whole world) to 
 
 #### Example
     <kendo:map zoom="zoom">
+    </kendo:map>
+
+### zoomable `boolean`
+
+Controls whether the map zoom level can be changed by the user.
+
+#### Example
+    <kendo:map zoomable="zoomable">
     </kendo:map>
 
 
@@ -276,6 +292,7 @@ For additional information check the [shapeMouseLeave](/api/web/map#events-shape
 ### zoomStart `String`
 
 Fired when the map zoom level is about to change.
+Cancelling the event will prevent the user action.
 
 
 For additional information check the [zoomStart](/api/web/map#events-zoomStart) event documentation.
@@ -474,6 +491,7 @@ For additional information check the [shapeMouseLeave](/api/web/map#events-shape
 ### kendo:map-zoomStart
 
 Fired when the map zoom level is about to change.
+Cancelling the event will prevent the user action.
 
 
 For additional information check the [zoomStart](/api/web/map#events-zoomStart) event documentation.
