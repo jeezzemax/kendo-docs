@@ -69,6 +69,32 @@ Enables or disables the built-in attribution control.
         });
     </script>
 
+### controls.attribution.position `String` *(default: "bottomRight")*
+
+The position of the attribution control. Possible values include:
+
+* "topLeft"
+* "topRight"
+* "bottomRight"
+* "bottomLeft"
+
+#### Example - position the attribution control
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            controls: {
+                attribution: {
+                    position: "topRight"
+                }
+            },
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+    </script>
+
 ### controls.navigator `Boolean|Object` *(default: true)*
 
 Enables or disables the built-in navigator control (directional pad).
@@ -79,6 +105,77 @@ Enables or disables the built-in navigator control (directional pad).
         $("#map").kendoMap({
             controls: {
                 navigator: false
+            },
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+    </script>
+
+### controls.navigator.position `String` *(default: "topLeft")*
+
+The position of the navigator control. Possible values include:
+
+* "topLeft"
+* "topRight"
+* "bottomRight"
+* "bottomLeft"
+
+#### Example - position the navigator control
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            controls: {
+                navigator: {
+                    position: "topRight"
+                }
+            },
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+    </script>
+
+### controls.zoom `Boolean|Object` *(default: true)*
+
+Enables or disables the built-in zoom control (+/- button).
+
+#### Example - hide the zoom control
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            controls: {
+                zoom: false
+            },
+            layers: [{
+                type: "tile",
+                urlTemplate: "http://a.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                attribution: "&copy; OpenStreetMap"
+            }]
+        });
+    </script>
+
+### controls.zoom.position `String` *(default: "topLeft")*
+
+The position of the zoom control. Possible values include:
+
+* "topLeft"
+* "topRight"
+* "bottomRight"
+* "bottomLeft"
+
+#### Example - position the zoom control
+    <div id="map"></div>
+    <script>
+        $("#map").kendoMap({
+            controls: {
+                zoom: {
+                    position: "topRight"
+                }
             },
             layers: [{
                 type: "tile",
