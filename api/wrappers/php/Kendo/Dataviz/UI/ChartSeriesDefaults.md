@@ -297,7 +297,7 @@ The space between the chart series as proportion of the series width.
     ?>
 
 ### stack
-A value indicating if the series should be stacked. String value indicates that the series should be stacked in a group with the specified name.
+A value indicating if the series should be stacked.String value indicates that the series should be stacked in a group with the specified name.
 
 #### Returns
 `\Kendo\Dataviz\UI\ChartSeriesDefaults`

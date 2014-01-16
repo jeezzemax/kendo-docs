@@ -365,7 +365,7 @@ The space between the chart series as proportion of the series width.
 
 ### stack `java.lang.Object`
 
-A value indicating if the series should be stacked. String value indicates that the series should be stacked in a group with the specified name.
+A value indicating if the series should be stacked.String value indicates that the series should be stacked in a group with the specified name.
 
 #### Example
     <kendo:chart-seriesItem stack="stack">

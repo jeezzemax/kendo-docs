@@ -18,7 +18,7 @@ The configuration of built-in map controls.
 
 ### attribution `boolean`
 
-Enables or disables the built-in attribution control.
+Enables or disables the built-in attribution control. Further configuration is available via [kendo:map-controls-attribution](#kendo-map-controls-attribution). 
 
 #### Example
     <kendo:map-controls attribution="attribution">
@@ -31,6 +31,15 @@ Enables or disables the built-in navigator control (directional pad). Further co
 #### Example
     <kendo:map-controls navigator="navigator">
     </kendo:map-controls>
+
+### zoom `boolean`
+
+Enables or disables the built-in zoom control (+/- button). Further configuration is available via [kendo:map-controls-zoom](#kendo-map-controls-zoom). 
+
+#### Example
+    <kendo:map-controls zoom="zoom">
+    </kendo:map-controls>
+
 
 ##  Configuration JSP Tags
 
@@ -58,4 +67,15 @@ More documentation is available at [kendo:map-controls-navigator](/api/wrappers/
         <kendo:map-controls-navigator></kendo:map-controls-navigator>
     </kendo:map-controls>
 
+### kendo:map-controls-zoom
+
+Enables or disables the built-in zoom control (+/- button).
+
+More documentation is available at [kendo:map-controls-zoom](/api/wrappers/jsp/map/controls-zoom).
+
+#### Example
+
+    <kendo:map-controls>
+        <kendo:map-controls-zoom></kendo:map-controls-zoom>
+    </kendo:map-controls>
 

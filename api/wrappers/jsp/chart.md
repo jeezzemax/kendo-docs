@@ -312,6 +312,38 @@ For additional information check the [dragStart](/api/web/chart#events-dragStart
         }
     </script>
 
+### noteClick `String`
+
+Fired when the user clicks one of the notes.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [noteClick](/api/web/chart#events-noteClick) event documentation.
+
+#### Example
+    <kendo:chart noteClick="handle_noteClick">
+    </kendo:chart>
+    <script>
+        function handle_noteClick(e) {
+            // Code to handle the noteClick event.
+        }
+    </script>
+
+### noteHover `String`
+
+Fired when the user hovers one of the notes.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [noteHover](/api/web/chart#events-noteHover) event documentation.
+
+#### Example
+    <kendo:chart noteHover="handle_noteHover">
+    </kendo:chart>
+    <script>
+        function handle_noteHover(e) {
+            // Code to handle the noteHover event.
+        }
+    </script>
+
 ### plotAreaClick `String`
 
 Fired when the user clicks the plot area.The event handler function context (available via the this keyword) will be set to the widget instance.
@@ -582,6 +614,42 @@ For additional information check the [dragStart](/api/web/chart#events-dragStart
                 }
             </script>
         </kendo:chart-dragStart>
+    </kendo:chart>
+
+### kendo:chart-noteClick
+
+Fired when the user clicks one of the notes.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [noteClick](/api/web/chart#events-noteClick) event documentation.
+
+#### Example
+    <kendo:chart>
+        <kendo:chart-noteClick>
+            <script>
+                function(e) {
+                    // Code to handle the noteClick event.
+                }
+            </script>
+        </kendo:chart-noteClick>
+    </kendo:chart>
+
+### kendo:chart-noteHover
+
+Fired when the user hovers one of the notes.The event handler function context (available via the this keyword) will be set to the widget instance.
+
+
+For additional information check the [noteHover](/api/web/chart#events-noteHover) event documentation.
+
+#### Example
+    <kendo:chart>
+        <kendo:chart-noteHover>
+            <script>
+                function(e) {
+                    // Code to handle the noteHover event.
+                }
+            </script>
+        </kendo:chart-noteHover>
     </kendo:chart>
 
 ### kendo:chart-plotAreaClick

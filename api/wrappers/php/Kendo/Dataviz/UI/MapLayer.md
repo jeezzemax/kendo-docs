@@ -76,6 +76,24 @@ Sets the data source of the dataSource.
     $layer->dataSource(array('schema' => $schema));
     ?>
 
+### key
+The key of the bing layer.
+
+#### Returns
+`\Kendo\Dataviz\UI\MapLayer`
+
+#### Parameters
+
+##### $value `string`
+
+
+
+#### Example 
+    <?php
+    $layer = new \Kendo\Dataviz\UI\MapLayer();
+    $layer->key('value');
+    ?>
+
 ### opacity
 The the opacity for the layer.
 
