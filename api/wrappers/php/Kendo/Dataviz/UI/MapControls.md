@@ -71,7 +71,7 @@ Enables or disables the built-in navigator control (directional pad).
     ?>
 
 
-#### Example - using [\Kendo\Dataviz\UI\MapControlsNavigator](/api/wrappers/php/Kendo/Dataviz/UI/MapControlsNavigator)
+#### Example - using [\Kendo\Dataviz\UI\MapControlsNavigator](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapControlsNavigator)
     <?php
     $controls = new \Kendo\Dataviz\UI\MapControls();
     $navigator = new \Kendo\Dataviz\UI\MapControlsNavigator();
@@ -109,7 +109,7 @@ Enables or disables the built-in zoom control (+/- button).
     ?>
 
 
-#### Example - using [\Kendo\Dataviz\UI\MapControlsZoom](/api/wrappers/php/Kendo/Dataviz/UI/MapControlsZoom)
+#### Example - using [\Kendo\Dataviz\UI\MapControlsZoom](/kendo-ui/api/wrappers/php/Kendo/Dataviz/UI/MapControlsZoom)
     <?php
     $controls = new \Kendo\Dataviz\UI\MapControls();
     $zoom = new \Kendo\Dataviz\UI\MapControlsZoom();
