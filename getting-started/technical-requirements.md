@@ -40,10 +40,10 @@ Below are the system requirements for the Kendo UI Framework.
 <table class="devices-platforms stripes" style="margin-top: 1.2em;">
    <tbody>
         <tr>
-            <th class="browsers"></th>
+            <th class="browsers" style="width: 120px"></th>
             <th class="browsers" style="width: 100px">Kendo UI Web</th>
-            <th class="browsers" style="width: 100px">Kendo UI DataViz</th>
-            <th class="browsers" style="width: 100px">Kendo UI Mobile</th>
+            <th class="browsers" style="width: 150px">Kendo UI DataViz</th>
+            <th class="browsers" style="width: 150px">Kendo UI Mobile</th>
         </tr>
         <tr>
            <td><span class="ie"></span>Internet Explorer</td>
@@ -65,9 +65,9 @@ Below are the system requirements for the Kendo UI Framework.
         </tr>
         <tr>
             <td><span class="opera"></span>Opera</td>
-            <td>11.0 +</td>
-            <td>11.0 +</td>
-            <td>11.0 +</td>
+            <td>15.0 +</td>
+            <td>15.0 +</td>
+            <td>15.0 +</td>
         </tr>
         <tr>
             <td><span class="safari"></span>Safari 5+ (OS X)</td>
@@ -111,7 +111,7 @@ It is highly recommended to use IE's [Edge mode](http://blogs.msdn.com/b/ie/arch
     </tr>
     <tr>
         <td><span class="ios"></span> iOS</td>
-        <td>4.0 +</td>
+        <td>6.0 +</td>
     </tr>
     <tr>
         <td><span class="blackberry"></span>BlackBerry</td>
