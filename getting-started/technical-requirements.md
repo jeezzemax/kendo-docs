@@ -45,31 +45,31 @@ Below are the system requirements for the Kendo UI Framework.
             <th style="width: 150px">Kendo UI DataViz</th>
             <th style="width: 150px">Kendo UI Mobile</th>
         </tr>
-        <tr>
+        <tr style="align: center">
            <td><span class="ie"></span>Internet Explorer</td>
            <td>7+</td>
            <td>7+</td>
            <td>10+</td>
         </tr>
-        <tr>
+        <tr style="align: center">
             <td><span class="firefox"></span>Firefox</td>
             <td><a href="http://www.mozilla.org/en-US/firefox/organizations/">ESR</a> +</td>
             <td><a href="http://www.mozilla.org/en-US/firefox/organizations/">ESR</a> +</td>
             <td>-</td>
         </tr>
-        <tr>
+        <tr style="align: center">
             <td><span class="chrome"></span>Chrome</td>
             <td>Yes</td>
             <td>Yes</td>
             <td>Yes</td>
         </tr>
-        <tr>
+        <tr style="align: center">
             <td><span class="opera"></span>Opera</td>
             <td>15.0 +</td>
             <td>15.0 +</td>
             <td>15.0 +</td>
         </tr>
-        <tr>
+        <tr style="align: center">
             <td><span class="safari"></span>Safari 5+ (OS X)</td>
             <td>Yes</td>
             <td>Yes</td>
@@ -107,7 +107,7 @@ It is highly recommended to use IE's [Edge mode](http://blogs.msdn.com/b/ie/arch
     </tr>
     <tr>
         <td><span class="android"></span> Android</td>
-        <td>2.2 +</td>
+        <td>2.3 +</td>
     </tr>
     <tr>
         <td><span class="ios"></span> iOS</td>
