@@ -42,7 +42,7 @@ Below are the system requirements for the Kendo UI Framework.
         <tr>
             <th style="width: 120px"></th>
             <th style="width: 100px">Kendo UI Web</th>
-            <th style="width: 110px">Kendo UI DataViz</th>
+            <th style="width: 115px">Kendo UI DataViz</th>
             <th style="width: 110px">Kendo UI Mobile</th>
         </tr>
         <tr style="align: center">
